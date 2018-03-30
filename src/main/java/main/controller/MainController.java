@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import main.Form.MemberForm;
  
+
 @Controller
 public class MainController {
  
@@ -25,7 +27,9 @@ public class MainController {
         model.addAttribute("serverTime", formattedDate );
         System.out.println("tes************");
         
-          
+        
+        
+        
         return "index";
     }
   @RequestMapping(value = "/login", method = RequestMethod.POST)
@@ -39,5 +43,13 @@ public class MainController {
 	  
 	  return "index";
   }
+  @RequestMapping(value= "/userChk",method = RequestMethod.POST)
+  public String userChk() {
+	  
+	  
+	  
+	  return "";
+  }
+  
  
 }

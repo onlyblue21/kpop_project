@@ -2,8 +2,11 @@
 <!DOCTYPE mapper
    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="main.db.client.LoginMapper.java">
+<mapper namespace="main.db.client.LoginMapper">
 	
-
+ <select id="selectAll" resultMap="ArrayList">
+        SELECT name FROM fruits
+    </select>
  
 </mapper>
+   
