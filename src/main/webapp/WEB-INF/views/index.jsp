@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+	pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -11,35 +11,28 @@
 		<table>
 			<thead>
 				<tr>
-					<td>
-						LOGIN
-					</td>
-				</tr>		
+					<td>LOGIN</td>
+				</tr>
 			</thead>
 			<tbody>
 				<tr>
-				ID
-					<td>
-					<input type="text" name="userId" value="">			
+					<td>ID <input type="text" name="userId">
 					</td>
-				</tr>		
+				</tr>
 				<tr>
-				PASSWORD
-					<td>
-					<input type="password" name="userPassword" value="">
+					<td>PASSWORD <input type="password" name="userPassword">
 					</td>
 				</tr>
 				<tr>
 					<td>
-					<button  type="submit" id="sumit">«í«°«¤«ó</button>
+						<button type="submit" id="sumit">«í«°«¤«ó</button>
 					</td>
 				</tr>
-			</tbody>		
+			</tbody>
 		</table>
-	 ±è¼º¹¬ Å×½ºÆ® ¼º°ø!!!
-	The time on the server is ${serverTime}.
+		±è¼º¹¬ Å×½ºÆ® ¼º°ø!!! The time on the server is ${serverTime}.
 	</form>
-<br>
+	<br>
 </body>
 
 </html>
