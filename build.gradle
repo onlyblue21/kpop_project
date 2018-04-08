@@ -43,28 +43,23 @@ dependencies {
     //Mybatis
     compile 'org.mybatis:mybatis:3.4.4'
     testCompile 'junit:junit:4.12'
-    
-    
-    
-    
     compile 'commons-dbcp:commons-dbcp:1.4'
-  
   	//log4
   	compile("org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16")
-  	//compile("org.postgresql:postgresql:9.3-1101-jdbc4")
     //postgresql
   	compile group: 'org.postgresql', name: 'postgresql', version: '9.4-1200-jdbc41'
   	compile 'org.postgresql:postgresql:42.2.2.jre7'
-  	  
-  	//compile ('springframework.boot:spring-boot-starter-data-jpa')
-  	//compile ('springframework.boot:spring-boot-starter-data-rest')
-  	//compile ('org.prijectlombok:lombok')
-  	//compile ('org.springframework.boot:spring-boot-starter-test')
-  	  
+	//spring-boot  thymeleaf
+    compile "org.springframework.boot:spring-boot-starter-web:1.5.8.RELEASE"
+	
+	//spring thymeleafを使うのため、以下の依存性が必要、ただし、JSPは使えなくなる
+	//compile('org.thymeleaf:thymeleaf:3.0.7.RELEASE')
+	//compile('org.thymeleaf:thymeleaf-spring4:3.0.7.RELEASE')
+	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+	
     //추가 내용
     providedCompile "javax.servlet:javax.servlet-api:3.1.0"
     compile "org.springframework:spring-webmvc:4.1.6.RELEASE"
-    compile "org.springframework.boot:spring-boot-starter-web:1.5.8.RELEASE"
     /*내장 톰켓에서 jstl 인식하도록 추가*/
     compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '8.5.20'
   compile('javax.servlet:jstl:1.2') /*jsp를 사용하기 위해 jstl 추가 */
@@ -83,4 +78,3 @@ uploadArchives {
        }
     }
 }
-
