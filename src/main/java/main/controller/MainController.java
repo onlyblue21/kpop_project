@@ -25,7 +25,7 @@ public class MainController {
         String formattedDate = dateFormat.format(date);
           
         model.addAttribute("serverTime", formattedDate );
-        System.out.println("tes************");
+        System.out.println("tes1");
         
         
         
@@ -38,7 +38,7 @@ public class MainController {
 	  System.out.println("id= " + vo.getUserId());
 	  System.out.println("pw= " + vo.getUserPassword());
 	  
-	  System.out.println("tes************");
+	  System.out.println("tes2");
 	  
 	  
 	  return "index";
