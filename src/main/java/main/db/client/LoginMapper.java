@@ -2,9 +2,9 @@ package main.db.client;
 
 import java.util.List;
 
-import main.Form.MemberForm;
+import main.Form.LoginForm;
 
 public interface LoginMapper {
 
-	List<MemberForm> selectAll();
+	List<LoginForm> selectAll();
 }

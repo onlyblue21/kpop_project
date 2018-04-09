@@ -10,7 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import main.Form.MemberForm;
+import main.Form.LoginForm;
  
 
 @Controller
@@ -33,7 +33,7 @@ public class MainController {
         return "index";
     }
   @RequestMapping(value = "/login", method = RequestMethod.POST)
-  public String login(MemberForm vo,Locale locale, Model model) {
+  public String login(LoginForm vo,Locale locale, Model model) {
 
 	  System.out.println("id= " + vo.getUserId());
 	  System.out.println("pw= " + vo.getUserPassword());

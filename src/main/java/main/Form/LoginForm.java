@@ -1,6 +1,6 @@
 package main.Form;
 
-public class MemberForm {
+public class LoginForm {
 
 	private String userId;
 	private String userPassword;
