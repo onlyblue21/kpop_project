@@ -51,6 +51,7 @@ dependencies {
   	compile 'org.postgresql:postgresql:42.2.2.jre7'
 	//spring-boot  thymeleaf
     compile "org.springframework.boot:spring-boot-starter-web:1.5.8.RELEASE"
+	compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.2")
 	
 	//spring thymeleafを使うのため、以下の依存性が必要、ただし、JSPは使えなくなる
 	//compile('org.thymeleaf:thymeleaf:3.0.7.RELEASE')

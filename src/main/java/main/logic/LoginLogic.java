@@ -4,7 +4,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
-import main.db.service.LoginService;
+import service.LoginService;
 
 
 public class LoginLogic {
