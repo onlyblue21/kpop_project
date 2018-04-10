@@ -1,6 +1,6 @@
 package main.db.entity;
 
-public class Login {
+public class LoginEntity {
 	private String userId;
 	private String userPassword;
 	private String nickName;

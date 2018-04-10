@@ -3,8 +3,13 @@
    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="main.db.client.LoginMapper">
-	
- <select id="selectAll" resultMap="ArrayList">
+	  <resultMap id="login" type="main.Bean.MemberBean" >
+        <result property="userId" column="userId"/>
+        <result property="userPassword" column="userPassword"/>
+        <result property="nickName" column="nickName"/>
+    </resultMap>
+
+ 	<select id="login" parameterType="main.db.entity.LoginEntity" resultMap="login">
         SELECT name FROM fruits
     </select>
  

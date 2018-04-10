@@ -1,10 +1,15 @@
 package main.db.client;
 
-import java.util.List;
+import org.springframework.stereotype.Repository;
 
-import main.Form.LoginForm;
+import main.db.entity.LoginEntity;
 
+@Repository
 public interface LoginMapper {
 
-	List<LoginForm> selectAll();
+	String mapper ="/main/db/map/LoginMapper";
+	
+	public int login(LoginEntity Login) {
+	}
+	
 }
