@@ -43,10 +43,6 @@ dependencies {
     //Mybatis
     compile 'org.mybatis:mybatis:3.4.4'
     testCompile 'junit:junit:4.12'
-    
-    
-    
-    
     compile 'commons-dbcp:commons-dbcp:1.4'
   
   	//log4
@@ -55,27 +51,22 @@ dependencies {
     //postgresql
   	compile group: 'org.postgresql', name: 'postgresql', version: '9.4-1200-jdbc41'
   	compile 'org.postgresql:postgresql:42.2.2.jre7'
-  	  
   	//compile ('springframework.boot:spring-boot-starter-data-jpa')
   	//compile ('springframework.boot:spring-boot-starter-data-rest')
   	//compile ('org.prijectlombok:lombok')
   	//compile ('org.springframework.boot:spring-boot-starter-test')
-  	  
     //추가 내용
     providedCompile "javax.servlet:javax.servlet-api:3.1.0"
     compile "org.springframework:spring-webmvc:4.1.6.RELEASE"
     compile "org.springframework.boot:spring-boot-starter-web:1.5.8.RELEASE"
     /*내장 톰켓에서 jstl 인식하도록 추가*/
     compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '8.5.20'
-  compile('javax.servlet:jstl:1.2') /*jsp를 사용하기 위해 jstl 추가 */
+    compile('javax.servlet:jstl:1.2') /*jsp를 사용하기 위해 jstl 추가 */
 }
- 
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8' // 인코딩 UTF-8로 통일.
- 
 test {
     systemProperties 'property': 'value'
 }
- 
 uploadArchives {
     repositories {
        flatDir {
@@ -83,4 +74,3 @@ uploadArchives {
        }
     }
 }
-
